@@ -21,6 +21,13 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+/* .input-group>.input-group-prepend {
+  flex: 0 0 20%;
+}
+.input-group .input-group-text {
+  width: 50%;
+} */
+
 .description{
   white-space: pre-wrap;
 }
