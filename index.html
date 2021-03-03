@@ -14,10 +14,10 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link
+    <!-- <link
       href="https://fonts.Saveogleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -28,104 +28,107 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <main>
+    
       <div class="container-fluid">
         <!-- Timeblocks Save here -->
-      <main class='row'>
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">9:00am</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div>
-                 
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">10:00am</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div>
-
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">11:00am</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div>
+        <main>
+          <div class='row'>
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">9:00am</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" data-time='9:00am' id='time9am'>
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div>
+                     
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">10:00am</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" data-time='10:00am' id='time10am'>
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div>
+    
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">11:00am</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" data-time='11' id='time11am'>
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div>
+                   
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">12:00pm</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" data-time='12:00pm' id='time12pm'>
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div> 
+                
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">1:00pm</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" data-time='13' id='time1pm'>
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div>
+                  
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">2:00pm</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div>
+                   
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">3:00pm</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div> 
                
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">12:00pm</span>
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">4:00pm</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div>
+                  
+            <div class="input-group mb-1">
+              <div class="input-group-prepend mr-1">
+                <span class="input-group-text" id="basic-addon1">5:00pm</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append ml-1">
+                <button class="btn btn-success" type="submit">Save</button>
+              </div>
+            </div>
           </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div> 
-            
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">1:00pm</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div>
-              
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">2:00pm</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div>
-               
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">3:00pm</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div> 
-           
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">4:00pm</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div>
-              
-        <div class="input-group mb-1">
-          <div class="input-group-prepend mr-1">
-            <span class="input-group-text" id="basic-addon1">5:00pm</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-append ml-1">
-            <button class="btn btn-success" type="submit">Save</button>
-          </div>
-        </div>
-      </main>
+        </main>
+      
         
   
       </div>
-    </main>
+    
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
