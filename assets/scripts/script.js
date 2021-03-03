@@ -18,13 +18,16 @@ inputsArray.forEach((input) => {
     } else {
         input.style.backgroundColor = '#77dd77'
     }
+
+    let eventText = localStorage.getItem('event');
+    time9am.setAttribute('placeholder', eventText);
 });
 
-console.log(document.getElementById('btn9am'));
+
 
 variables.btn9am.addEventListener('click', function() {
     let inputText = time9am.value;
-    console.log(inputText);
+    localStorage.setItem('event', inputText);
 })
 
 
