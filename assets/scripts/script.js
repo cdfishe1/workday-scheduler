@@ -3,8 +3,8 @@ const variables = {
     today: moment(),
     hour: Number(moment().format('HH')),
     allInputs: document.getElementsByClassName('form-control'),
-    btn9am: $('btn9am'),
-    time9am: $('time9am'),
+    btn9am: document.getElementById('btn9am'),
+    time9am: document.getElementById('time9am'),
 };
 
 variables.currentDay.text(variables.today.format('dddd, MMMM Do YYYY'));
@@ -20,9 +20,11 @@ inputsArray.forEach((input) => {
     }
 });
 
-variables.btn9am.addEventListner('click', function() {
-    let btn9amEvent = variables.time9am.value;
-    console.log(btn9amEvent);
-});
+console.log(document.getElementById('btn9am'));
+
+variables.btn9am.addEventListener('click', function() {
+    let inputText = time9am.value;
+    console.log(inputText);
+})
 
 
