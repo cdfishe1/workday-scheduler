@@ -11,7 +11,9 @@ variables.currentDay.text(variables.today.format('dddd, MMMM Do YYYY'));
 
 let inputsArray = Array.from(variables.allInputs);
 inputsArray.forEach((input) => {
-    if(input.dataset.time < variables.hour) {
+    
+    let parsedInputTime = parseInt(input.dataset.time, 10);
+    if((parsedInputTime) < variables.hour) {
         input.style.backgroundColor = '#ff6961'
     } else if (input.dataset.time > variables.hour) {
         input.style.backgroundColor = '#d3d3d3';
