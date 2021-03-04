@@ -37,68 +37,52 @@ inputsArray.forEach((input) => {
         input.style.backgroundColor = '#77dd77'
     }
 
+    input.setAttribute('placeholder', 'Enter an event.');
+
     if (localStorage.getItem('event9am') !== null) {
         let eventText9am = localStorage.getItem('event9am');
         time9am.value = eventText9am;
-    } else {
-        time9am.setAttribute('placeholder', 'Enter an event.');
-    }
+    } 
 
     if (localStorage.getItem('event10am') !== null) {
         let eventText10am = localStorage.getItem('event10am');
         time10am.value = eventText10am;
-    } else {
-        time10am.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
 
     if (localStorage.getItem('event11am') !== null) {
         let eventText11am = localStorage.getItem('event11am');
         time11am.value = eventText11am;
-    } else {
-        time11am.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
 
     if (localStorage.getItem('event12pm') !== null) {
         let eventText12pm = localStorage.getItem('event12pm');
         time12pm.value = eventText12pm;
-    } else {
-        time12pm.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
 
     if (localStorage.getItem('event1pm') !== null) {
         let eventText1pm = localStorage.getItem('event1pm');
         time1pm.value = eventText1pm;
-    } else {
-        time1pm.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
 
     if (localStorage.getItem('event2pm') !== null) {
         let eventText2pm = localStorage.getItem('event2pm');
         time2pm.value = eventText2pm;
-    } else {
-        time2pm.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
 
     if (localStorage.getItem('event3pm') !== null) {
-        let eventText3pm = localStorage.getItem('event12pm');
+        let eventText3pm = localStorage.getItem('event3pm');
         time3pm.value = eventText3pm;
-    } else {
-        time3pm.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
 
     if (localStorage.getItem('event4pm') !== null) {
         let eventText4pm = localStorage.getItem('event4pm');
         time4pm.value = eventText4pm;
-    } else {
-        time4pm.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
 
     if (localStorage.getItem('event5pm') !== null) {
         let eventText5pm = localStorage.getItem('event5pm');
         time5pm.value = eventText5pm;
-    } else {
-        time5pm.setAttribute('placeholder', 'Enter an event.')
-    }
+    } 
     
 });
 
@@ -116,7 +100,7 @@ variables.btn10am.addEventListener('click', function() {
 
 
 variables.btn11am.addEventListener('click', function() {
-    let inputText11am = variables.time10am.value;
+    let inputText11am = variables.time11am.value;
     localStorage.setItem('event11am', inputText11am);
 })
 
