@@ -3,6 +3,7 @@ const variables = {
     today: moment(),
     hour: Number(moment().format('HH')),
     allInputs: document.getElementsByClassName('form-control'),
+    allButtons: document.getElementsByClassName('btn'),
     btn9am: document.getElementById('btn9am'),
     btn10am: document.getElementById('btn10am'),
     btn11am: document.getElementById('btn11am'),
@@ -26,6 +27,9 @@ const variables = {
 variables.currentDay.text(variables.today.format('dddd, MMMM Do YYYY'));
 
 let inputsArray = Array.from(variables.allInputs);
+console.log(inputsArray);
+let buttonsArray = Array.from(variables.allButtons);
+console.log(buttonsArray);
 inputsArray.forEach((input) => {
     
     let parsedInputTime = parseInt(input.dataset.time, 10);
