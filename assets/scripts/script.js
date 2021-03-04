@@ -1,3 +1,5 @@
+// Variables for the script
+
 const variables = {
     currentDay: $('#currentDay'),
     today: moment(),
@@ -24,12 +26,17 @@ const variables = {
     time5pm: document.getElementById('time5pm'),
 };
 
+// Sets current day in header
 variables.currentDay.text(variables.today.format('dddd, MMMM Do YYYY'));
 
+// Creates an array out of the input elements
 let inputsArray = Array.from(variables.allInputs);
 console.log(inputsArray);
+// Creates an array of the button elements
 let buttonsArray = Array.from(variables.allButtons);
 console.log(buttonsArray);
+
+// Controls background color, input text, and getting local retrieval for input fields
 inputsArray.forEach((input) => {
     
     let parsedInputTime = parseInt(input.dataset.time, 10);
@@ -91,7 +98,7 @@ inputsArray.forEach((input) => {
 });
 
 
-
+// Sets eventlisteners for each button to add content to local storage
 variables.btn9am.addEventListener('click', function() {
     let inputText9am = variables.time9am.value;
     localStorage.setItem('event9am', inputText9am);
