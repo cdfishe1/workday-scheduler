@@ -37,14 +37,25 @@ let buttonsArray = Array.from(variables.allButtons);
 console.log(buttonsArray);
 
 
+const setDataAttribute = () => {
+    for (let i = 0; i <= inputsArray.length - 1; i++) {
+        for (let j = 0; j <= inputsArray.length; j++) {
+            inputsArray[i].setAttribute('data-hour', Number(i + inputsArray.length))
+        }
+    }
+};
+
+setDataAttribute();
 
 // Controls background color, input text, and getting local retrieval for input fields
 inputsArray.forEach((input) => {
     
-    let parsedInputTime = parseInt(input.dataset.time, 10);
+    let parsedInputTime = parseInt(input.dataset.hour, 10);
+    console.log(input.dataset.hour);
+    console.log(variables.hour);
     if((parsedInputTime) < variables.hour) {
         input.style.backgroundColor = '#ff6961';
-    } else if (input.dataset.time > variables.hour) {
+    } else if (parsedInputTime > variables.hour) {
         input.style.backgroundColor = '#d3d3d3';
     } else {
         input.style.backgroundColor = '#77dd77'
@@ -102,15 +113,7 @@ inputsArray.forEach((input) => {
     
 });
 
-// const setDataAttribute = () => {
-//     for (let i = 0; i <= inputsArray.length - 1; i++) {
-//         for (let j = 0; j <= inputsArray.length; j++) {
-//             inputsArray[i].setAttribute('data-hour', Number(i + inputsArray.length))
-//         }
-//     }
-// };
 
-// setDataAttribute();
 
 
 
