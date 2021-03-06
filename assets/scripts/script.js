@@ -36,19 +36,24 @@ console.log(inputsArray);
 let buttonsArray = Array.from(variables.allButtons);
 console.log(buttonsArray);
 
+
+
 // Controls background color, input text, and getting local retrieval for input fields
 inputsArray.forEach((input) => {
     
     let parsedInputTime = parseInt(input.dataset.time, 10);
     if((parsedInputTime) < variables.hour) {
-        input.style.backgroundColor = '#ff6961'
+        input.style.backgroundColor = '#ff6961';
     } else if (input.dataset.time > variables.hour) {
         input.style.backgroundColor = '#d3d3d3';
     } else {
         input.style.backgroundColor = '#77dd77'
     }
 
+    input.style.fontWeight = 'bold';
+
     input.setAttribute('placeholder', 'Enter an event.');
+    
 
     if (localStorage.getItem('event9am') !== null) {
         let eventText9am = localStorage.getItem('event9am');
@@ -96,6 +101,18 @@ inputsArray.forEach((input) => {
     } 
     
 });
+
+// const setDataAttribute = () => {
+//     for (let i = 0; i <= inputsArray.length - 1; i++) {
+//         for (let j = 0; j <= inputsArray.length; j++) {
+//             inputsArray[i].setAttribute('data-hour', Number(i + inputsArray.length))
+//         }
+//     }
+// };
+
+// setDataAttribute();
+
+
 
 
 // Sets eventlisteners for each button to add content to local storage
