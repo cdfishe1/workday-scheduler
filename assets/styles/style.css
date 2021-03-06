@@ -5,6 +5,7 @@ body {
   height: 100vh;
 }
 
+/* Controls the width of the schedule area */
 main {
   width: 80%;
   margin: 0 auto;
