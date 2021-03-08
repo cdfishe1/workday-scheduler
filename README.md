@@ -19,7 +19,7 @@ Provides a way to store inputed events in a daily scheduler.
 ## Workday Scheduler
 
 ### Screencast on mobile
-![Screencast on mobile](assets/images/mobile-demo.gif)
+![Screencast on mobile](assets/images/demo.gif)
 
 
 ## Deployment
@@ -63,7 +63,7 @@ buttonsArray.forEach((button) => {
 
 ## Testing
 
-Tested accessibility using [WAVE web accessbility evaluation tool](https://wave.webaim.org/report#/https://cdfishe1.github.io/javascript-quiz/)
+Tested accessibility using [WAVE web accessbility evaluation tool](https://wave.webaim.org/report#/https://cdfishe1.github.io/workday-scheduler/)
 
 * Generates 0 errors.
 
