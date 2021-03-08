@@ -19,6 +19,7 @@ let inputsArray = Array.from(variables.allInputs);
 let buttonsArray = Array.from(variables.allButtons);
 
 
+
 // Sets the hour for each input field
 const setDataAttribute = () => {
     for (let i = 0; i <= inputsArray.length - 1; i++) {
@@ -42,7 +43,6 @@ const setEventValue = () => {
         }
     }
 };
-
 setEventValue();
 
 // Controls background color, input text, and getting local retrieval for input fields
@@ -59,7 +59,9 @@ inputsArray.forEach((input) => {
 
     input.style.fontWeight = 'bold';
 
-    input.setAttribute('placeholder', 'Enter an event.');  
+    input.setAttribute('placeholder', 'Enter an event');  
+
+    
     
 });
 
