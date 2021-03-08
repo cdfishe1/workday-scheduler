@@ -66,6 +66,9 @@ inputsArray.forEach((input) => {
 });
 
 // Sets the event listner and local storage on the save buttons
+// I utilized the strategy found in the following stackoverflow answer: 
+// https://stackoverflow.com/questions/8660269/getting-closest-input-value-from-clicked-element-with-jquery
+
 
 buttonsArray.forEach((button) => {
     button.addEventListener('click', function() {
