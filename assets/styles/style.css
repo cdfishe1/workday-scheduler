@@ -14,8 +14,8 @@ main {
 /* Header with current day */
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: #004a5a;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
   
