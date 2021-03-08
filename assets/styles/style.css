@@ -77,11 +77,6 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-/* .custom-prepend-text {
-  width: 5vw;
-  text-align: center;
-} */
-
 .custom-placeholder-text::placeholder {
   font-weight: initial;
 }
