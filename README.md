@@ -1,14 +1,13 @@
 [![Generic badge](https://img.shields.io/badge/license-MIT-<COLOR>.svg)](#license)
-![GitHub language count](https://img.shields.io/github/languages/count/cdfishe1/javascript-quiz)
-![GitHub top language](https://img.shields.io/github/languages/top/cdfishe1/javascript-quiz)
-
+![GitHub language count](https://img.shields.io/github/languages/count/cdfishe1/workday-scheduler)
+![GitHub top language](https://img.shields.io/github/languages/top/cdfishe1/workday-scheduler)
 
 # Workday Scheduler
 
 Provides a way to store inputed events in a daily scheduler.
 
 ## Table of Contents
-* [Javascript Quiz Page](#javascript-quiz-screencast)
+* [Workday Scheduler](#javascript-quiz-screencast)
 * [Deployment](#deployment)
 * [Scope of Project](#scope-of-project)
 * [Installation](#installation)
@@ -33,7 +32,7 @@ Site deployed at [Charles Fisher](https://cdfishe1.github.io/workday-scheduler/)
 * Used javascript to dynamically populate the contents of elements.
 * Used dataset attributes to retrieve and manipulate output.
 * Used nested for loops to populate attributes and retrieve local storage iteratively.
-* 
+* Added title attributes to input fields to enhance accessibility.
 
 
 ## Installation
@@ -72,7 +71,7 @@ Generates 0 errors on load or through execution.
 
 ## Credits
 
-* David Metcalfe, bootcamp tutor, for helping me to create an array from a nodelist in order to pass a forEach method to make event handlers.
+* Natalie Finnegan, bootcamp participant, for helping me understand jQuery element selection.
 
 ## License
 
