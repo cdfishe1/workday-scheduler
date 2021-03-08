@@ -33,6 +33,7 @@ Site deployed at [Charles Fisher](https://cdfishe1.github.io/workday-scheduler/)
 * Used dataset attributes to retrieve and manipulate output.
 * Used nested for loops to populate attributes and retrieve local storage iteratively.
 * Added title attributes to input fields to enhance accessibility.
+* Made header sticky to hide scrollable events.
 
 
 ## Installation
